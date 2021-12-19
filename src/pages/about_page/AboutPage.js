@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../../custom_components/navbar/NavBar";
 import About from "../../assets/about.svg";
 import "./AboutPage.css";
+import { Link } from "react-router-dom";
 
 function AboutPage() {
   const aboutContent = [
@@ -24,6 +25,11 @@ function AboutPage() {
               </div>
             );
           })}
+          <div className="AboutPage-project">
+            <Link className="AboutPage-project-button" to="/projects">
+              See some of my projects
+            </Link>
+          </div>
         </div>
       </div>
     </div>
