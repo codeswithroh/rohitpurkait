@@ -1,0 +1,39 @@
+.AboutPage {
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.AboutPage-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.AboutPage-content {
+  max-width: 20em;
+  font-family: "Caveat Brush";
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .AboutPage {
+    overflow-y: scroll;
+  }
+
+  .AboutPage-container {
+    flex-direction: column;
+  }
+
+  .AboutPage-profile-pic {
+    width: 90%;
+    margin-bottom: 1.5em;
+  }
+
+  .AboutPage-content {
+    max-width: 10em;
+  }
+}
