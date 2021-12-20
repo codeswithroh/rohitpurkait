@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../../custom_components/navbar/NavBar";
 import Project1 from "../../assets/animelife.jpg";
 import Project2 from "../../assets/covid.jpg";
@@ -8,6 +8,14 @@ import Project from "../../assets/project.svg";
 import "./ProjectPage.css";
 
 function ProjectPage() {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   const projectNames = ["AnimeLife", "MyBondhu", "Envisage", "RohChat"];
   const projectLinks = [
     "https://animelife.live/",
