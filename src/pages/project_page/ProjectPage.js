@@ -18,9 +18,9 @@ function ProjectPage() {
 
   const projectNames = ["AnimeLife", "MyBondhu", "Envisage", "RohChat"];
   const projectLinks = [
-    "https://animelife.live/",
-    "https://www.mybondhu.in/",
-    "https://envisage.live/",
+    "https://animelife.netlify.app/",
+    "https://help-hands.netlify.app/",
+    "https://iic-envisage.netlify.app/",
     "https://rohchat.netlify.app/",
   ];
   const projectDescription = [
